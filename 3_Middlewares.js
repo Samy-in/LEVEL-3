@@ -6,6 +6,9 @@
 const express = require("express");
 const app = express();
 
+// Remember under this app.get or any request there can be multiple callback functions be written and to 
+// link this callback functions with each other we use "next " keyword inside the parameter of this functions. 
+
 app.get("/health-checkup" , (req,res) => {
     const username = req.headers.username;
     const Password = req.headers.Password;
@@ -38,5 +41,8 @@ app.get("/health-checkup" , (req,res) => {
 // Middlewares are used when there is too many precheck ups on users and any routes.
 // So we make functions of that prechecks somewhere in the global environment.
 
-
 app.listen(3000);
+// Middlewares are used when you know there are many prechecks so you move this checks to some another place
+// And this place is called Middlewares.
+
+
