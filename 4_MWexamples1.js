@@ -1,3 +1,4 @@
+// Q1) Count the number of request hitting on the route.
 // Objective is to count number of requests on this routes.
 
 const express = require("express");
@@ -24,4 +25,4 @@ app.get("/health-checkup" , function(req,res){
 
 app.listen(3002)
 
-// Q1) find the average it took to handle a request?
+// Q2) find the average it took to handle a request?
