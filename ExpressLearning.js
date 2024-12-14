@@ -54,7 +54,7 @@ app.get('/', function (req, res){
 
 // Now to post this request we have to download postman becoz we can't send post request from browser
 app.post('/', function(req,res){
-    const isHealthy = re.body.isHealthy;
+    const isHealthy = res.body.isHealthy;
     // this body will be undefined becoz node js cant access body easliy so we have to parse the body.
     // to use this we write app.use(express.json())
     users[0].Kidneys.push({
