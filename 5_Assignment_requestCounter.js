@@ -1,4 +1,4 @@
-const { name } = require("ejs");
+
 
 const express = reqiure("express");
 const app = express();
