@@ -1,5 +1,5 @@
 // Authentication has some cryptography jargons so let understand these jargons
-
+// JWT process is just like opening a new account in bank.
 // Hashing 
 // Encryption
 // Json web tokens (JWT) = its take json as input and gets converted in output which is a token and anyone with this token
